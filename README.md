@@ -25,7 +25,7 @@ app.controller('MyController',MyController);
 function MyController(){
   var vm = this;
   
-  vm.country = {
+  vm.myobject = {
       first  : 'İSTANBUL',
       second : 'istanbul',
       third  : 'istanbul',
@@ -35,7 +35,7 @@ function MyController(){
 ```
 ```
 <div ng-controller="MyController as vm">
-   <div ng-bind="vm.country.first | lowercasetr"></div>
+   <div ng-bind="vm.myobject.first | lowercasetr"></div>
 </div>
 ```
 
@@ -43,7 +43,7 @@ function MyController(){
 ***
 ```
 <div ng-controller="MyController as vm">
-   <div ng-bind="vm.country.second | uppercasetr"></div>
+   <div ng-bind="vm.myobject.second | uppercasetr"></div>
 </div>
 ```
 
@@ -51,7 +51,7 @@ function MyController(){
 ***
 ```
 <div ng-controller="MyController as vm">
-   <div ng-bind="vm.country.third | capitalizetr"></div>
+   <div ng-bind="vm.myobject.third | capitalizetr"></div>
 </div>
 ```
 
@@ -59,7 +59,7 @@ function MyController(){
 ***
 ```
 <div ng-controller="MyController as vm">
-   <div ng-bind="vm.country.fourth | capitalizewordtr"></div>
+   <div ng-bind="vm.myobject.fourth | capitalizewordtr"></div>
 </div>
 ```
 
